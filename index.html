@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesys form task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(background.jpg);
+            background-repeat:repeat-y;
+            background-size: 100%;
+        }
+
+        header{
+            text-align: center;
+            color: white;
+        }
+
+        .main{
+            margin-top: 20px;
+            width: 60%;
+            background-color: white;
+            margin-left: 20%;
+        }
+
+        input{
+            margin-bottom: 10px;
+        }
+
+        form{
+            margin-left: 5%;
+        }
+
+        select {
+            width: 90%;
+            margin-bottom: 15px;
+        }
+
+        .Info{
+            padding-top: 20px;
+        }
+
+        .Info input {
+            width: 90%;
+        }
+
+        .Info,.Occupation,.comments label {
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+           font-weight: bold;
+        }
+
+        .Recommendation p {
+            font-weight: bold;
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .frameworks p {
+            font-weight: bold;
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        button{
+            width: 90%;
+            background-color: aqua;
+            border-radius: 5px;
+            border: 0.5px black solid;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: white;
+            cursor:text;
+        }
+
+        textarea {
+            margin-bottom: 20px;
+            width: 90%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GENESYS FORM TASK</h1>
+    </header>
+    
+    <main>
+        <div class="main">
+            <!-- INPUT THE FORM CODES HERE -->
+            <form action="#">
+                <div class="Info">
+                    <label for="Name">Name</label> <br>
+                    <input type="text" id="Name" placeholder="Enter your name"> <br>
+        
+                    <label for="Email">Email</label> <br>
+                    <input type="email" id="Email" placeholder="Enter your email"> <br>
+        
+                    <label for="Age">Age</label> <br>
+                    <input type="number" id="Age" placeholder="Enter your Age"> <br>
+                </div>
+    
+                <div class="Occupation">
+                    <label for="Occupation">Which best desribes you?</label> <br>
+                 <select name="Occupation" id="Occupation">
+                    <option value="Student">Student</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Entrepreneur">Entrepreneur</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="NYSC">NYSC</option>
+                 </select> <br>
+                </div>
+    
+                <div class="Recommendation">
+                    <p>Would you Recommend Genesys to a Friend</p>
+                    <input type="radio" name="Recommendation" id="Recommendation" >
+                    <label for="Yes"> Yes</label> <br>
+
+                    <input type="radio" name="Recommendation" id="Recommendation" >
+                    <label for="No">No</label> <br>
+
+                    <input type="radio" name="Recommendation" id="Recommendation" >
+                    <label for="Maybe">Maybe</label> <br>
+                </div>
+    
+                <div class="frameworks">
+                    <p>Languages and frameworks known (Check all that apply)</p>
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="C"> C</label> <br>
+                
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="C++">C++</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="C#">C#</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="Java#">Java#</label> <br>
+
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="Python">Python</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="Javascript">Javascript</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="React">React</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="Angular">Angular</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="Django">Django</label> <br>
+    
+                    <input type="checkbox" name="frameworks_known" id="frameworks_known" >
+                    <label for="Spring">Spring</label> <br> <br>
+                </div>
+    
+                <div class="comments">
+                    <label for="comments">Any comments or suggestions</label> <br>
+                    <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                </div>
+    
+                <button type="submit"> Submit</button>
+    
+            </form>
+        </div>
+    </main>
+</body>
+</html>
