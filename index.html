@@ -67,6 +67,12 @@
             font-optical-sizing: auto;
             font-style: normal;
         }
+
+        .frameworks {
+            margin-top: 20px;
+            margin-right: 5%;
+        }
+
         .frameworks p {
             font-weight: bold;
             font-family: "Work Sans", sans-serif;
@@ -76,15 +82,17 @@
 
         button{
             width: 90%;
-            background-color: aqua;
+            background-color: darkblue;
             border-radius: 5px;
             border: 0.5px black solid;
             margin-bottom: 20px;
+            color: white;
         }
 
         button:hover {
-            background-color: white;
-            cursor:text;
+            background-color: black;
+            transition: 1s;
+            cursor:pointer;
         }
 
         textarea {
@@ -92,6 +100,14 @@
             width: 90%;
         }
 
+
+        @media  (max-width:720px) {
+            .main {
+                transition: 0.5s;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 <body>
